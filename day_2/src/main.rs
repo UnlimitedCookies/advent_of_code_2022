@@ -3,14 +3,14 @@ fn main() {
 
     // first challenge
     let total_points: u32 = input.lines().map(|line| {
-        let (opponent, my_move) = line.split_once(" ").unwrap();
-        let translated_char = match opponent {
+        let (opponent_move, my_move) = line.split_once(" ").unwrap();
+        let translated_char = match opponent_move {
             "A" => "X",
             "B" => "Y",
             "C" => "Z",
             _ => "",
         };
-        let win_points = match (opponent, my_move) {
+        let win_points = match (opponent_move, my_move) {
             _ if (translated_char == my_move) => 3,
             ("A", "Y") => 6,
             ("B", "Z") => 6,
