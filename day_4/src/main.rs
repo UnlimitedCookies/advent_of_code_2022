@@ -31,5 +31,5 @@ fn main() {
             0
         }
     }).sum();
-    println!("Total amount of overlaping pairs: {total_overlap_count}");
+    println!("Total amount of overlapping pairs: {total_overlap_count}");
 }
