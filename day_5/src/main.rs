@@ -29,7 +29,7 @@ fn main() {
     let top_crates: String = stacks.iter().map(|stack| {
         stack.last().unwrap()
     }).collect();
-    println!("Crates on top: {top_crates}");
+    println!("CrateMover 9000 - crates on top: {top_crates}");
 
     // second challenge
     input_moves.lines().for_each(|line| {
@@ -44,5 +44,5 @@ fn main() {
     let top_crates: String = stacks2.iter().map(|stack| {
         stack.last().unwrap()
     }).collect();
-    println!("Crates on top: {top_crates}");
+    println!("CrateMover 9001 - crates on top: {top_crates}");
 }
