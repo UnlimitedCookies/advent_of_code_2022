@@ -8,7 +8,7 @@ fn main() {
     println!("First message marker detected after processing {} charactes.", get_after_marker_index(&input, 14));
 
     fn get_after_marker_index(input: &str, marker_size: usize) -> usize {
-        input.as_bytes().windows(marker_size).enumerate().find(|(i, chars)|{
+        input.as_bytes().windows(marker_size).enumerate().find(|(_i, chars)|{
             !(1..chars.len()).any(|i| {
                 chars[i..].contains(&chars[i - 1])
             })
