@@ -1,7 +1,7 @@
 fn main() {
     let input = std::fs::read_to_string("input").unwrap();
 
-    // first challenge 
+    // first challenge
     println!("First packet marker detected after processing {} charactes.", get_after_marker_index(&input, 4));
 
     // second challenge
